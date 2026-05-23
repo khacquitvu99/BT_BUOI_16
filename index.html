@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử Lý Dãy Số</title>
+
+    <!-- Link google font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title">Công Cụ Xử Lý Dãy Số</h2>
+
+            <div class="form-body">
+                <div class="form-group">
+                    <label for="txt_songuyen">Nhập vào dãy số:</label>
+                    <input type="text" id="txt_songuyen" placeholder="Ví dụ: -5, 23, 4, -84, 3, 0.5, 0.7">
+                </div>
+
+                <div class="form-group">
+                    <label for="txt_vitri">Nhập vào vị trí cần đổi:</label>
+                    <input type="text" id="txt_vitri" placeholder="Ví dụ: 1, 3 (nhập 2 vị trí cách nhau dấu phẩy)">
+                </div>
+            </div>
+
+            <div class="button-grid">
+                <button id="btn_tongduong" class="btn btn-success" onclick="tongSoDuong()">Tổng Số Dương</button>
+                <button id="btn_diemduong" class="btn btn-success" onclick="diemSoDuong()">Đếm Số Dương</button>
+                <button id="btn_sonhonhat" class="btn btn-info" onclick="soNhoNhat()">Tìm Số Nhỏ Nhất</button>
+                <button id="btn_duongnhonhat" class="btn btn-info" onclick="soDuongNhoNhat()">Tìm Số Dương Nhỏ
+                    Nhất</button>
+                <button id="btn_timchan" class="btn btn-warning" onclick="soChanCuoi()">Tìm Số Chẵn Cuối</button>
+                <button id="btn_doivitri" class="btn btn-warning" onclick="doiVitri()">Đổi Vị Trí</button>
+                <button id="btn_nguyento" class="btn btn-primary" onclick="soNguyenTo()">Tìm Số Nguyên Tố Đầu
+                    Tiền</button>
+                <button id="btn_sapxep" class="btn btn-primary" onclick="sapXep()">Sắp Xếp Dãy Số</button>
+                <button id="btn_timnguyen" class="btn btn-secondary" onclick="SoNguyen()">Tìm Số Nguyên</button>
+                <button id="btn_sosanh" class="btn btn-secondary" onclick="soSanh()">So Sánh Âm - Dương</button>
+            </div>
+
+            <div class="result-box">
+                <span class="result-label">Kết quả hiển thị:</span>
+                <p id="display">Chưa có kết quả hiển thị...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
